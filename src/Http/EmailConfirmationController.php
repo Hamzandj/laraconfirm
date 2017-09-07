@@ -14,7 +14,7 @@ class EmailConfirmationController extends Controller
 
         if ($operation->exists()) {
             $operation->delete();
-            return redirect()->route('login')->with('laraconfirmAlert', 'Your account has activated.');
+            return redirect()->route('login')->with('laraconfirmAlert', 'Your account has been activated.');
         };
         abort(404);
     }
